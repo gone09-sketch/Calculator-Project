@@ -26,8 +26,6 @@ public class App {
                     break;
                 } else if (firstNum < 0) {
                     System.out.println("!입력오류: 0 이상의 숫자를 다시 입력하세요: ");
-                } else {
-                    System.out.println("!입력오류: 0 이상의 숫자를 다시 입력하세요: ");
                 }
             }
 
