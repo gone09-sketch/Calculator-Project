@@ -17,27 +17,21 @@ public class Calculator {
             case '+':
                 result = firstNum + secondNum;
                 System.out.println("==계산 결과==");
-                System.out.println("첫 번째 숫자: " + firstNum);
-                System.out.println("두 번째 숫자: " + secondNum);
-                System.out.println("사칙연산 기호: " + mathSymbol);
+                System.out.println(firstNum + " " + mathSymbol + " " + secondNum + " = " + result);
                 System.out.println("결과값: " + result);
                 break;
 
             case '-':
                 result = firstNum - secondNum;
                 System.out.println("==계산 결과==");
-                System.out.println("첫 번째 숫자: " + firstNum);
-                System.out.println("두 번째 숫자: " + secondNum);
-                System.out.println("사칙연산 기호: " + mathSymbol);
+                System.out.println(firstNum + " " + mathSymbol + " " + secondNum + " = " + result);
                 System.out.println("결과값: " + result);
                 break;
 
             case '*':
                 result = firstNum * secondNum;
                 System.out.println("==계산 결과==");
-                System.out.println("첫 번째 숫자: " + firstNum);
-                System.out.println("두 번째 숫자: " + secondNum);
-                System.out.println("사칙연산 기호: " + mathSymbol);
+                System.out.println(firstNum + " " + mathSymbol + " " + secondNum + " = " + result);
                 System.out.println("결과값: " + result);
                 break;
 
@@ -46,10 +40,7 @@ public class Calculator {
                     System.out.println("!입력 오류: 나눗셈 연산에서 분모(두 번째 숫자)에 0이 입력될 수 없습니다.");
                 } else {
                     result = firstNum / secondNum;
-                    System.out.println("==계산 결과==");
-                    System.out.println("첫 번째 숫자: " + firstNum);
-                    System.out.println("두 번째 숫자: " + secondNum);
-                    System.out.println("사칙연산 기호: " + mathSymbol);
+                    System.out.println(firstNum + " " + mathSymbol + " " + secondNum + " = " + result);
                     System.out.println("결과값: " + result);
                 }
                 break;
