@@ -16,32 +16,19 @@ public class Calculator {
 
             case '+':
                 result = firstNum + secondNum;
-                System.out.println("==계산 결과==");
-                System.out.println(firstNum + " " + mathSymbol + " " + secondNum + " = " + result);
-                System.out.println("결과값: " + result);
                 break;
 
             case '-':
                 result = firstNum - secondNum;
-                System.out.println("==계산 결과==");
-                System.out.println(firstNum + " " + mathSymbol + " " + secondNum + " = " + result);
-                System.out.println("결과값: " + result);
                 break;
 
             case '*':
                 result = firstNum * secondNum;
-                System.out.println("==계산 결과==");
-                System.out.println(firstNum + " " + mathSymbol + " " + secondNum + " = " + result);
-                System.out.println("결과값: " + result);
                 break;
 
             case '/':
                 result = firstNum / secondNum;
-                System.out.println("==계산 결과==");
-                System.out.println(firstNum + " " + mathSymbol + " " + secondNum + " = " + result);
-                System.out.println("결과값: " + result);
                 break;
-
         }
                 // 결과값을 저장
                 allResults.add(result);
@@ -50,12 +37,10 @@ public class Calculator {
                 return result;
     }
 
-
         //게터
         public ArrayList<Integer> getAllResults () {
             return allResults;
         }
-
 
         //세터 (전체 리스트 변경)
         public void setAllResults (ArrayList < Integer > newResults) {
