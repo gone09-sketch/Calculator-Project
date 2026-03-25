@@ -36,43 +36,36 @@ public class Calculator {
                 break;
 
             case '/':
-                if (secondNum == 0) {
-                    System.out.println("!입력 오류: 나눗셈 연산에서 분모(두 번째 숫자)에 0이 입력될 수 없습니다.");
-                } else {
-                    result = firstNum / secondNum;
-                    System.out.println(firstNum + " " + mathSymbol + " " + secondNum + " = " + result);
-                    System.out.println("결과값: " + result);
-                }
+                result = firstNum / secondNum;
+                System.out.println("==계산 결과==");
+                System.out.println(firstNum + " " + mathSymbol + " " + secondNum + " = " + result);
+                System.out.println("결과값: " + result);
                 break;
+
         }
-        // 결과값을 저장
-        allResults.add(result);
+                // 결과값을 저장
+                allResults.add(result);
 
-        // 결과값 반환
-        return result;
-
-    }
-
-    //게터
-    public ArrayList<Integer> getAllResults() {
-        return allResults;
+                // 결과값 반환
+                return result;
     }
 
 
-    //세터 (전체 리스트 변경)
-    public void setAllResults(ArrayList<Integer> newResults) {
-        this.allResults = newResults;
-    }
-
-    // 가장 먼저 저장된 데이터 삭제 (.isEmpty 메서드 사용)
-    public void removeFirstResult() {
-        if (!allResults.isEmpty()){
-            allResults.remove(0);
+        //게터
+        public ArrayList<Integer> getAllResults () {
+            return allResults;
         }
-    }
 
 
+        //세터 (전체 리스트 변경)
+        public void setAllResults (ArrayList < Integer > newResults) {
+            this.allResults = newResults;
+        }
 
-
-
+        // 가장 먼저 저장된 데이터 삭제 (.isEmpty 메서드 사용)
+        public void removeFirstResult () {
+            if (!allResults.isEmpty()) {
+                allResults.remove(0);
+            }
+        }
 }

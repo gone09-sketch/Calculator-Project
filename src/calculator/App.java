@@ -59,9 +59,16 @@ public class App {
                 }
             }
 
+            // 분모 0 검증하기
+            if (mathSymbol == '/' && secondNum == 0) {
+                System.out.println("!입력오류: 0으로 나눌 수 없습니다.\n");
+                continue;
+            }
+
 
             //결과값 받기
             int result = calculator.calculate(firstNum, secondNum, mathSymbol);
+
 
             // 계산 종료 여부 묻기
             System.out.println("\n계산을 종료하시겠습니까? 예: exit / 메뉴보기: 1");
